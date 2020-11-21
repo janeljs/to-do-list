@@ -40,9 +40,9 @@ function deleteItem() {
 }
 
 
-let list = document.querySelector('.item__list');
-list.addEventListener('click', function(event) {
+let checkList = document.querySelector('.item__list');
+checkList.addEventListener('click', event => {
   if (event.target.tagName === 'LI') {
     event.target.classList.toggle('checked');
   }
-}, false);
+});
